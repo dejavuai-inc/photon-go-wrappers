@@ -229,7 +229,7 @@ func StringFromStrInfo(strInfo *PhotonAPI2_StrInfo) string {
 	return C.GoStringN(strInfo.Str, C.int(length))
 }
 
-func isValidIP(ip string) bool {
+func IsValidIP(ip string) bool {
 	parts := strings.Split(ip, ".")
 	if len(parts) != 4 {
 		return false
