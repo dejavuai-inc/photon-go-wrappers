@@ -1,7 +1,7 @@
 package es
 
-// #cgo CFLAGS: -I.
-// #cgo LDFLAGS: -L. -lPhotonAPI2_zmq -Wl,-rpath,./
+// #cgo CFLAGS: -I. -I/usr/include/Photon
+// #cgo LDFLAGS: -L. -L/usr/lib/Photon -lPhotonAPI2 -Wl,-rpath,./ -Wl,-rpath,/usr/lib/Photon
 // #include "PhotonAPI2.h"
 import "C"
 
