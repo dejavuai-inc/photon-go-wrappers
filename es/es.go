@@ -122,7 +122,7 @@ type PhotonAPI2_BufInfo struct {
 func statusCallback(status C.int, param unsafe.Pointer) {
 	if status == C.SERVER_HEARTBEAT_LOST {
 		fmt.Printf("\nStatus callback called: SERVER HEARTBEAT LOST\n")
-		C.Disconnect(ctx)
+		//C.Disconnect(ctx)
 		os.Exit(1)
 	} else {
 		fmt.Printf("\nStatus callback called: SERVER HEARTBEAT IS OK\n")
